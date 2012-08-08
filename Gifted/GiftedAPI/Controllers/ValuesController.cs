@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace GiftedAPI.Controllers
+namespace Gifted.API.Controllers
 {
     public class GiftsController : ApiController
     {

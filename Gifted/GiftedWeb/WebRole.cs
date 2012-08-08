@@ -5,7 +5,7 @@ using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
 
-namespace GiftedWeb
+namespace Gifted.Web
 {
     public class WebRole : RoleEntryPoint
     {

@@ -9,7 +9,7 @@
   **********************************************************************************************
 -->
 <ServiceDefinition name="Gifted" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
-  <WebRole name="GiftedWeb" vmsize="Small">
+  <WebRole name="Gifted.Web" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -28,7 +28,7 @@
       <LocalStorage name="Microsoft.WindowsAzure.Plugins.Caching.FileStore" sizeInMB="1000" cleanOnRoleRecycle="false" />
     </LocalResources>
   </WebRole>
-  <WebRole name="GiftedAPI" vmsize="Small">
+  <WebRole name="Gifted.API" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>

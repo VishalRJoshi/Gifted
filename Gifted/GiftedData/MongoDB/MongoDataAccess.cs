@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using GiftedEntities;
+using Gifted.Entities;
 using MongoDB.Driver.Builders;
 
 
-namespace GiftedData.MongoDB
+namespace Gifted.Data.MongoDB
 {
     public class MongoDataAccess :IGiftedDataAccess 
     {
@@ -44,7 +44,7 @@ namespace GiftedData.MongoDB
         }
         #endregion
 
-        public Gift AddNewGift(GiftedEntities.Gift gift)
+        public Gift AddNewGift(Gifted.Entities.Gift gift)
         {
             if (mongoServer != null || giftedDB != null)
             {
@@ -77,7 +77,7 @@ namespace GiftedData.MongoDB
             return giftCollection.FindAllAs<Gift>();
         }
 
-        public bool UpdateGift(Guid id, GiftedEntities.Gift gift)
+        public bool UpdateGift(Guid id, Gifted.Entities.Gift gift)
         {
             if (mongoServer != null || giftedDB != null)
             {
@@ -95,13 +95,13 @@ namespace GiftedData.MongoDB
                 return false;
         }
 
-        public GiftedEntities.Gift GetGift(Guid id)
+        public Gifted.Entities.Gift GetGift(Guid id)
         {
             IMongoQuery query = Query.EQ("_id", id);
             return giftCollection.FindAs<Gift>(query).FirstOrDefault();
         }
 
-        public List<GiftedEntities.Gift> GetGiftList(string userId)
+        public List<Gifted.Entities.Gift> GetGiftList(string userId)
         {
             IMongoQuery query = Query.EQ("UserId", userId);
             return giftCollection.FindAs<Gift>(query).ToList();

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace GiftedAPI.Controllers
+namespace Gifted.API.Controllers
 {
     public class HomeController : Controller
     {

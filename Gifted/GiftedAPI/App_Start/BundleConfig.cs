@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace GiftedAPI
+namespace Gifted.API
 {
     public class BundleConfig
     {

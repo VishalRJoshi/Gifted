@@ -37,20 +37,20 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GiftedAPI\GiftedAPI.csproj">
-      <Name>GiftedAPI</Name>
+    <ProjectReference Include="..\GiftedAPI\Gifted.API.csproj">
+      <Name>Gifted.API</Name>
       <Project>{610c4de5-725f-4b73-8714-2c49c1829ed4}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>GiftedAPI</RoleName>
+      <RoleName>Gifted.API</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
-    <ProjectReference Include="..\GiftedWeb\GiftedWeb.csproj">
-      <Name>GiftedWeb</Name>
+    <ProjectReference Include="..\GiftedWeb\Gifted.Web.csproj">
+      <Name>Gifted.Web</Name>
       <Project>{df02f476-ad79-4d60-8f51-a8961f9b3a79}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
-      <RoleName>GiftedWeb</RoleName>
+      <RoleName>Gifted.Web</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>

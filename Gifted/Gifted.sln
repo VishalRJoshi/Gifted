@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Gifted", "Gifted\Gifted.ccproj", "{F410C33B-39AC-4E13-8DB0-3B772BAB64F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftedWeb", "GiftedWeb\GiftedWeb.csproj", "{DF02F476-AD79-4D60-8F51-A8961F9B3A79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gifted.Web", "GiftedWeb\Gifted.Web.csproj", "{DF02F476-AD79-4D60-8F51-A8961F9B3A79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftedAPI", "GiftedAPI\GiftedAPI.csproj", "{610C4DE5-725F-4B73-8714-2C49C1829ED4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gifted.API", "GiftedAPI\Gifted.API.csproj", "{610C4DE5-725F-4B73-8714-2C49C1829ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftedEntities", "GiftedEntities\GiftedEntities.csproj", "{E768155E-BD23-4909-97D2-1EC2795D2EC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gifted.Entities", "GiftedEntities\Gifted.Entities.csproj", "{E768155E-BD23-4909-97D2-1EC2795D2EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiftedData", "GiftedData\GiftedData.csproj", "{56D608AF-4AF8-455A-AE55-084028E56F0D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gifted.Data", "GiftedData\Gifted.Data.csproj", "{56D608AF-4AF8-455A-AE55-084028E56F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

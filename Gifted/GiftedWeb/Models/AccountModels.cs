@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace GiftedWeb.Models
+namespace Gifted.Web.Models
 {
 
     public class ChangePasswordModel
