@@ -46,7 +46,7 @@ namespace Gifted.Data.MongoDB
 
         public Gift AddNewGift(Gifted.Entities.Gift gift)
         {
-            if (mongoServer != null || giftedDB != null)
+            if (mongoServer != null && giftedDB != null)
             {
                 giftCollection = giftedDB.GetCollection<Gift>("Gift");
                 gift.Id = Guid.NewGuid();
@@ -61,7 +61,7 @@ namespace Gifted.Data.MongoDB
 
         public bool DeleteGift(Guid id)
         {
-            if (mongoServer != null || giftedDB != null)
+            if (mongoServer != null && giftedDB != null)
             {
                 giftCollection = giftedDB.GetCollection<Gift>("Gift");
                 IMongoQuery query = Query.EQ("_id", id);
@@ -79,7 +79,7 @@ namespace Gifted.Data.MongoDB
 
         public bool UpdateGift(Guid id, Gifted.Entities.Gift gift)
         {
-            if (mongoServer != null || giftedDB != null)
+            if (mongoServer != null && giftedDB != null)
             {
                 IMongoQuery query = Query.EQ("_id", id);
                 gift.ModifiedDate = DateTime.UtcNow;
